@@ -7,10 +7,15 @@ export default function Home() {
     e.preventDefault()
 
   }
+  const style = {
+    btn: 'bg-white p-5 border-4'
+  }
   return (
     <main className="flex min-h-screen flex-col items-center  p-24">
       <div>{count}</div>
-      <button onClick={() => setCounter(count + 1)}>add</button>
+      <button
+        className='{style.btn}'
+        onClick={() => setCounter(count + 1)}>add</button>
     </main>
   )
 }
